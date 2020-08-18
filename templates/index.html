@@ -1,0 +1,13 @@
+<div>
+    <a href="/">Home</a> | <a href="/history/">History</a>
+</div>
+<h1>{{ title }}</h1>
+<pre>{{ cow_says }}</pre>
+<div>
+    <h3>Enter a phrase below:</h3>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{  form.as_p  }}
+        <input type="submit" value="Submit!">
+    </form>
+</div>
